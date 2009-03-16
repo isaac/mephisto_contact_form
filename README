@@ -23,8 +23,8 @@ Paste in the following code:
 
 Feel free to modify labels, layout etc.
 
-3. Edit {MEPHISTO_ROOT}\vendor\plugins\mephisto_contact_form\lib\contact_notifier.rb
-and put in the email address you want contact form submissions to go to.
+3. Go to the plugin administration page here: {YOUR SITE HOST}/admin/plugins/show/contact_form
+and enter the email address you want contact form submissions to go to.
 
 4. Link to "/contact_form" from your site.
 

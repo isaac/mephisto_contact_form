@@ -5,7 +5,7 @@ module ::Mephisto
     class ContactForm < Mephisto::Plugin
       
       author 'James Crisp'
-      notes 'Plugin for Mephisto which provides a customisable contact us / feedback form. Feedback / messages are sent via email to an address you specify. Previously hosted at http://mephisto-contact-form-plugin.googlecode.com/svn/trunk/'
+      notes 'Plugin for Mephisto which provides a customisable contact us / feedback form. Feedback / messages are sent via email to an address you specify.'
       homepage 'http://jamescrisp.org/2007/03/19/contact-feedback-form-plugin-for-mephisto/'
       
       option :email, nil
