@@ -14,8 +14,5 @@ class ContactFormsController < ApplicationController
       render_liquid_template_for(:contact_us, 'errors' => message.errors.full_messages, 
         'submitted' => params[:contact], :status => "200 OK")
     end
-  rescue
-    debugger
-    self
   end
 end
