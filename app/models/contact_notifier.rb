@@ -1,8 +1,6 @@
 class ContactNotifier < ActionMailer::Base
   include Mephisto::Liquid::UrlMethods
-  
-  self.template_root = File.dirname(__FILE__) + '/views'
-  
+    
   def contact_notification(contact_message, recipient)
     recipients      recipient
     from            contact_message.author_email
