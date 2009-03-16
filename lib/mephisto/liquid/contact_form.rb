@@ -22,7 +22,7 @@ module Mephisto
               'submit' => %(<input type="submit" value="Send" />)
             }
             
-            result << %(<form id="contact-form" method="post" action="/contact_submit">#{[errors]+render_all(@nodelist, context)}</form>)
+            result << %(<form id="contact-form" method="post" action="/contact_form">#{[errors]+render_all(@nodelist, context)}</form>)
           else
             result << %(<p id="contact-message">#{context['message']}</p>)
           end
