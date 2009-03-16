@@ -1,10 +1,10 @@
-class ContactFormController < ApplicationController
+class ContactFormsController < ApplicationController
 
-  def contact_form
-      render_liquid_template_for(:contact_us, :status => "200 OK")
+  def show
+    render_liquid_template_for(:contact_us, :status => "200 OK")
   end
 
-  def contact_submit
+  def create
     message = ContactMessage.new(params[:contact])
     if (message.valid?)
       ContactNotifier.deliver_contact_notification(message)
