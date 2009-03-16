@@ -1,6 +1,8 @@
 require 'test/unit'
 require File.dirname(__FILE__) + '/../test_helper'
 
+class ContactFormsController; def rescue_action(e) raise e end; end
+
 class ContactNotifier
   def self.deliver_contact_notification(message, recipient)
     @last_message = message
