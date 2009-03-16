@@ -10,7 +10,7 @@ class ContactFormPluginTest < ActionController::IntegrationTest
   end
 
   def test_contact_submit_route
-    post "/contact_submit"
+    post "/contact_form"
     assert_response :success
     assert_select "h1", "Contact Us"
   end
